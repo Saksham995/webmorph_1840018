@@ -2,19 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 *{
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+	/*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;*/
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 html{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/*overflow: hidden;*/
     height: 100%;
 	/*font-family: 'Josefin Sans', sans-serif;
 	font-family: 'Poppins', sans-serif;*/
 }
 body{
+	margin: 0;
+	padding: 0;
 	min-height: 100%;
 	background-color: #152535;
 }
@@ -75,56 +78,53 @@ body{
 
 .section{
 	display: block;
-	padding: 60px;
+	padding: 0 60px;
 }
 .container{
 	display: block;
 	margin: 0 auto;
-	max-width: 1160px;
 }
 .flexbox{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .left{
-	display: block;
-	flex: 0 0 300px;
+	padding-top: 55px;
 }
-.left img{
-	display: inline-block;
-	max-width: 120%;
 
-}
 .right{
-	display: block;
-	flex: 0 0 750px;
-	max-width: 800px;
+	/*max-width: 1046px;*/
 	position: relative;
 }
-.right img{
-	display: inline-block;
-	/*width: 935px;*/
-	max-width: 107%;
-	margin-top: -60px;
-	/*padding-left: 25px*/
+.right .image-2{
 
 }
-.right h1{
-	font-family: 'Josefin Sans', sans-serif;
-	color: #fff;
-	position: absolute;
-	top: 360px;
-	left: 0;
+.heading {
+    position: absolute;
+    left: 2%;
+    top: auto;
+    right: 0%;
+    bottom: 25%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-weight: 600;
 }
-.right p{
-	font-family: 'Poppins', sans-serif;
-	color: grey;
-	margin-top: 5px;
-}
-.right .watch{
-
+.paragraph {
+    margin-top: 10px;
+    margin-right: 200px;
+    margin-left: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #747474;
 }
 .right .button{
 	background-color: #1c87c9;
@@ -136,10 +136,14 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 4px 2px;
     cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
 }
-.right .wishlist{
+.right .first{
+	margin-left: 20px;
+}
+.right .middle{
 	background-color: #152535;
     border: 2px solid grey;
     border-radius: 5px;
@@ -152,7 +156,7 @@ body{
     margin: 4px 10px;
     cursor: pointer;
 }
-.right .details{
+.right .last{
 	background-color: #152535;
     border: 2px solid grey;
     border-radius: 5px;
@@ -166,9 +170,102 @@ body{
     cursor: pointer;
 }
 
+@media screen and (max-width: 991px) {
+    .left{
+    	display: none;
+    }
 
+    .right{
+    	
+    }
 
+    .right .image-2{
+    	width: 88vw;
+    	align-items: center;
+    	justify-content: center;
+    }
 
+    .heading{
+        left: 0%;
+        bottom: 25%;
+    }
+
+    .paragraph{
+        margin-right: 120px;
+        margin-left: 10px;
+    }
+
+    .button.first{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .heading{
+        position: static;
+        bottom: 40%;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: 28px;
+        line-height: 161%;
+    }
+
+    .paragraph{
+        margin-top: 0px;
+        margin-right: 0px;
+        font-size: 12px;
+    }
+
+    .button.first{
+        font-size: 14px;
+    }
+
+    .button.last{
+        font-size: 14px;
+    }
+
+    .button.middle{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .heading{
+        position: static;
+        font-size: 24px;
+    }
+
+    .paragraph{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .button.first{
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .button.last{
+        margin-right: 0px;
+        margin-left: 0px;
+        font-size: 12px;
+    }
+
+    .button.middle{
+        margin-right: 5px;
+        margin-left: 0px;
+        font-size: 12px;
+    }
+}
 
 
 /* hero section ends*/
