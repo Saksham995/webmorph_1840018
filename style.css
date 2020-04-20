@@ -21,6 +21,7 @@ body{
 /* Navbar starts */
 .navbar{
 	background-color: #203344;
+	height: 60px;
 }
 .navbar-brand{
 	font-family: 'Josefin Sans', sans-serif;
@@ -105,8 +106,8 @@ body{
 .right img{
 	display: inline-block;
 	/*width: 935px;*/
-	max-width: 100%;
-	margin-top: -115px;
+	max-width: 107%;
+	margin-top: -60px;
 	/*padding-left: 25px*/
 
 }
@@ -114,22 +115,58 @@ body{
 	font-family: 'Josefin Sans', sans-serif;
 	color: #fff;
 	position: absolute;
-	top: 275px;
+	top: 360px;
 	left: 0;
 }
 .right p{
 	font-family: 'Poppins', sans-serif;
 	color: grey;
+	margin-top: 5px;
 }
 .right .watch{
-	
+
 }
-.right a{
-	text-decoration: none;
-	background-color: #007bff;
-	font-size: 24px;
-	color: #fff;
+.right .button{
+	background-color: #1c87c9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
+.right .wishlist{
+	background-color: #152535;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+.right .details{
+	background-color: #152535;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+
+
 
 
 
