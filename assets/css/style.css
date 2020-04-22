@@ -417,7 +417,7 @@ a.carousel-control-prev{
 .top-rated{
   height: 100% !important;
   width: 100%;
-  margin: 40px 0 0 30px;
+  margin: 40px -10px 0 50px;
 }
 .sec-3{
   /*margin: 0 0 0 80px;*/
